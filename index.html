@@ -103,6 +103,8 @@
   .proj-tasks li::before{content:"›";position:absolute;left:0;color:var(--accent-dark);font-weight:500;}
   .proj-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--accent-deeper);text-decoration:none;font-weight:500;padding:.48rem 1.1rem;border-radius:50px;box-shadow:var(--neu-sm);transition:all .3s;}
   .proj-link:hover{box-shadow:var(--neu-in-sm);}
+  .proj-status{display:inline-flex;align-items:center;font-size:.75rem;color:var(--accent-deeper);font-weight:500;letter-spacing:.05em;}
+  .proj-status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent-dark);margin-right:.55rem;}
 
   /* AGENT PLACEHOLDER */
   .agent-placeholder{background:var(--bg);border-radius:24px;box-shadow:var(--neu-in);padding:3.5rem;text-align:center;}
@@ -296,6 +298,19 @@
       </ul>
       <a href="https://gmhub.com/game/4177" target="_blank" class="proj-link" data-zh="在 gmhub 试玩 ↗" data-en="Play on gmhub ↗">在 gmhub 试玩 ↗</a>
     </div>
+    <div class="proj-card reveal">
+      <div class="proj-year">2026 &nbsp;·&nbsp; INDIE GAME</div>
+      <div class="proj-title" data-zh="哥特塔楼" data-en="Gothic Tower">哥特塔楼</div>
+      <div class="proj-engine" data-zh="Unity（C#）· 2D 像素风" data-en="Unity (C#) · 2D Pixel Art">Unity（C#）· 2D 像素风</div>
+      <div class="proj-team" data-zh="个人独立项目 · 游戏设计与开发" data-en="Personal indie project · Game Design & Development">个人独立项目 &nbsp;·&nbsp; 游戏设计与开发</div>
+      <div class="proj-rlabel" data-zh="项目内容" data-en="Project Highlights">项目内容</div>
+      <ul class="proj-tasks">
+        <li data-zh="构建五区域横版塔楼关卡与 30 个可独立编辑的平台，围绕攀登与探索设计推进节奏" data-en="Built a five-zone side-scrolling tower with 30 independently editable platforms, paced around climbing and exploration.">构建五区域横版塔楼关卡与 30 个可独立编辑的平台，围绕攀登与探索设计推进节奏</li>
+        <li data-zh="实现对话交互、拾取解锁二段跳、重生与区域切换等核心玩法系统" data-en="Implemented dialogue, pickup-gated double jump, respawn, and room-transition systems.">实现对话交互、拾取解锁二段跳、重生与区域切换等核心玩法系统</li>
+        <li data-zh="制作哥特像素视觉与 Sprite 特效，并持续通过 Unity 编译和 Play Mode 测试验证玩法" data-en="Created Gothic pixel visuals and sprite effects, validating gameplay through Unity compilation and Play Mode tests.">制作哥特像素视觉与 Sprite 特效，并持续通过 Unity 编译和 Play Mode 测试验证玩法</li>
+      </ul>
+      <span class="proj-status" data-zh="开发中" data-en="In Development">开发中</span>
+    </div>
   </div>
 </section>
 
@@ -303,10 +318,20 @@
 <section id="agent">
   <div class="sec-label" data-zh="AI 探索" data-en="AI Exploration">AI 探索</div>
   <h2 class="sec-title" data-zh="Agent 项目" data-en="Agent Projects">Agent 项目</h2>
-  <div class="agent-placeholder reveal">
-    <div class="agent-placeholder-icon">🤖</div>
-    <div class="agent-placeholder-title" data-zh="正在筹备中…" data-en="Coming Soon…">正在筹备中…</div>
-    <div class="agent-placeholder-sub" data-zh="AI Agent 相关项目即将上线，敬请期待" data-en="AI agent projects are coming soon—stay tuned.">AI Agent 相关项目即将上线，敬请期待</div>
+  <div class="projects-grid">
+    <div class="proj-card reveal">
+      <div class="proj-year">2026 &nbsp;·&nbsp; AI AGENT</div>
+      <div class="proj-title">gameperf-agent</div>
+      <div class="proj-engine">Python · Claude Tool Use · CapFrameX</div>
+      <div class="proj-team" data-zh="个人项目 · 游戏性能分析" data-en="Personal project · Game Performance Analysis">个人项目 &nbsp;·&nbsp; 游戏性能分析</div>
+      <div class="proj-rlabel" data-zh="项目内容" data-en="Project Highlights">项目内容</div>
+      <ul class="proj-tasks">
+        <li data-zh="解析 CapFrameX CSV/JSON 捕获数据，生成瓶颈、卡顿与帧时间稳定性诊断" data-en="Parses CapFrameX CSV/JSON captures to diagnose bottlenecks, stutter, and frame pacing.">解析 CapFrameX CSV/JSON 捕获数据，生成瓶颈、卡顿与帧时间稳定性诊断</li>
+        <li data-zh="支持离线确定性分析与 Claude 工具调用两种模式，便于本地使用、演示与 CI" data-en="Supports deterministic offline analysis and a Claude tool-use mode for local workflows, demos, and CI.">支持离线确定性分析与 Claude 工具调用两种模式，便于本地使用、演示与 CI</li>
+        <li data-zh="使用 Markdown 与 JSONL 保存运行历史和可复用经验，支持跨次性能回归比较" data-en="Stores run history and reusable lessons in Markdown and JSONL for performance regression comparisons.">使用 Markdown 与 JSONL 保存运行历史和可复用经验，支持跨次性能回归比较</li>
+      </ul>
+      <a href="https://github.com/Nivanawa/gameperf-agent" target="_blank" rel="noopener noreferrer" class="proj-link" data-zh="在 GitHub 查看 ↗" data-en="View on GitHub ↗">在 GitHub 查看 ↗</a>
+    </div>
   </div>
 </section>
 
